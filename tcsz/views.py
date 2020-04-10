@@ -11,10 +11,16 @@ def hello(request):         #request参数必须有，名字类似self的默认�
 
 def index(request):
     context = {}
+    meili = [
+        {"name":'水上项目',"path":'/static/img/水上项目/s1.png','jj':'简介','xq':'详情'}
+    ]
+    context['title'] = '陶瓷水镇旅游官方网站'
+    for i in range(11):
+        meili.append(meili[0])
+    context['meili'] = meili
     #context['hello'] = 'Hello World!'
     return render(request, 'index.html', context)
 
 def test(request):
     context = {}
-    #context['hello'] = 'Hello World!'
-    return render(request, 'index2.html', context)
+    return render(request, 'traditional/summary.html',context)

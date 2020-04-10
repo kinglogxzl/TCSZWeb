@@ -23,5 +23,5 @@ urlpatterns = [
     #url(r'^hello$', tcsz.hello),
     path('hello/',tcsz.hello),
     path('', tcsz.index, name='index'),
-    path('test',tcsz.test)
+    path('test',tcsz.test),
 ]
