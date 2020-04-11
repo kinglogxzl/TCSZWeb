@@ -24,3 +24,6 @@ def index(request):
 def test(request):
     context = {}
     return render(request, 'traditional/summary.html',context)
+def tradition(request):
+    context = {}
+    return render(request, 'tradition.html',context)

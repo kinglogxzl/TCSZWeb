@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from django.conf.urls import url
 import tcsz.views as tcsz
 
@@ -24,4 +24,6 @@ urlpatterns = [
     path('hello/',tcsz.hello),
     path('', tcsz.index, name='index'),
     path('test',tcsz.test),
+    re_path('tradition/', tcsz.tradition),
+
 ]

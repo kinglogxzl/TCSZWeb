@@ -1,0 +1,10 @@
+﻿.wrap-full{width:100%;}
+.wrap{width:1400px;margin-left:auto;margin-right:auto;}
+.page-h2{font-family: 'SourceHanS-S_Be206bf1321a330';font-size: 32px;color: #272831;letter-spacing: 0.57px;line-height: 56px;}
+.page-h2 span{color:#e30000}
+.page-p{font-family:Arial,'微软雅黑','Microsoft YaHei',PingFangSC-Regular;font-size: 18px;color: #7E808A;letter-spacing: 0.8px;line-height: 28px;}
+.page-h4{font-family:Arial,'微软雅黑','Microsoft YaHei',PingFangSC-Regular;font-size: 18px;color: #272831;letter-spacing: 0.8px;}
+.page-h2-1{font-family: 'SourceHanS-S_Be206bf1321a330';font-size: 36px;color: #272831;letter-spacing: 1.29px;line-height:51px;}
+.page-h2-1 span{color:#e30000}
+.page-h2-t{padding-top:32px;padding-bottom:32px;}
+*{margin:0;padding:0;}
