@@ -27,3 +27,12 @@ def test(request):
 def tradition(request):
     context = {}
     return render(request, 'tradition.html',context)
+def origin(request):
+    context = {}
+    return render(request, 'origin.html',context)
+def celebrity(request):
+    context = {}
+    return render(request, 'celebrity.html',context)
+def custom(request):
+    context = {}
+    return render(request, 'custom.html',context)

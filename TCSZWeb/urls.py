@@ -24,6 +24,8 @@ urlpatterns = [
     path('hello/',tcsz.hello),
     path('', tcsz.index, name='index'),
     path('test',tcsz.test),
-    re_path('tradition/', tcsz.tradition),
-
+    path('tradition/', tcsz.tradition),
+    path('origin/', tcsz.origin),
+    path('celebrity/', tcsz.celebrity),
+    path('custom/', tcsz.custom),
 ]
