@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 import tcsz.views as tcsz
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +30,4 @@ urlpatterns = [
     path('origin/', tcsz.origin),
     path('celebrity/', tcsz.celebrity),
     path('custom/', tcsz.custom),
-]
+]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
