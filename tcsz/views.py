@@ -24,3 +24,20 @@ def index(request):
 def test(request):
     context = {}
     return render(request, 'traditional/summary.html',context)
+
+def tradition(request):
+    context = {}
+    context['title'] = '水镇概述'
+    return render(request, 'tradition.html',context)
+def origin(request):
+    context = {}
+    context['title'] = '水镇渊源'
+    return render(request, 'origin.html',context)
+def celebrity(request):
+    context = {}
+    context['title'] = '水镇名人'
+    return render(request, 'celebrity.html',context)
+def custom(request):
+    context = {}
+    context['title'] = '水镇民俗'
+    return render(request, 'custom.html',context)
