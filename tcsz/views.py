@@ -28,20 +28,24 @@ def test(request):
 def tradition(request):
     context = {}
     context['title'] = '水镇概述'
-    return render(request, 'tradition.html',context)
+    return render(request, 'watertown/tradition.html',context)
 def origin(request):
     context = {}
     context['title'] = '水镇渊源'
-    return render(request, 'origin.html',context)
+    return render(request, 'watertown/origin.html',context)
 def celebrity(request):
     context = {}
     context['title'] = '水镇名人'
-    return render(request, 'celebrity.html',context)
+    return render(request, 'watertown/celebrity.html',context)
 def custom(request):
     context = {}
     context['title'] = '水镇民俗'
-    return render(request, 'custom.html',context)
+    return render(request, 'watertown/custom.html',context)
 def activity(request):
     context = {}
     context['title'] = '景区活动'
     return render(request, 'activity/activity.html',context)
+def new(request):
+    context = {}
+    context['title'] = '新闻动态'
+    return render(request, 'activity/new.html',context)
