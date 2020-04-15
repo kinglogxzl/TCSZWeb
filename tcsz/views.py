@@ -41,3 +41,7 @@ def custom(request):
     context = {}
     context['title'] = '水镇民俗'
     return render(request, 'custom.html',context)
+def activity(request):
+    context = {}
+    context['title'] = '景区活动'
+    return render(request, 'activity/activity.html',context)
