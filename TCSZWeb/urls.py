@@ -32,4 +32,5 @@ urlpatterns = [
     path('custom/', tcsz.custom),
     path('activity/', tcsz.activity),
     path('new/', tcsz.new),
+    path('notice/', tcsz.notice),
 ]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

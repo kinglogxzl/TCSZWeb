@@ -49,3 +49,7 @@ def new(request):
     context = {}
     context['title'] = '新闻动态'
     return render(request, 'activity/new.html',context)
+def notice(request):
+    context = {}
+    context['title'] = '景区公告'
+    return render(request, 'activity/notice.html',context)
