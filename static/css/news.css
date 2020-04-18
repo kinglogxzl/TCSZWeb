@@ -1,0 +1,102 @@
+
+/* 新闻 */
+
+.news {
+    width: 1200px;
+
+    margin: 0 auto;
+}
+.mains .news .title {
+    margin-top: 70px;
+}
+.news .right{
+    width: 588px;
+    height: 450px;
+    float: left;
+}
+.news .right .box{
+    width: 588px;
+    height: 150px;
+    border-bottom: 1px solid rgba(71, 94, 222, .1);
+}
+
+.mr11 {
+    margin-right: 11px;
+}
+.ml11 {
+    margin-left: 11px;
+}
+.bt1{
+   border-top: 1px solid rgba(71, 94, 222, .1);
+}
+
+.news .right li .dsc1{
+
+    float: left;
+
+}
+.news .right li .em1{
+
+    display: block;
+    width: 78px;
+    height: 50px;
+    margin-top: 27px;
+    margin-left: 30px;
+    line-height: 50px;
+    border: 1px solid rgba(34, 34, 34, .1);
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+
+}
+.news .right li .em2{
+
+    width: 78px;
+    height: 40px;
+    margin-left: 30px;
+    border: 1px solid rgba(34, 34, 34, .1);
+    border-top: 0;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+
+}
+.news .right li .dsc2{
+
+    margin-top: 27px;
+    margin-left: 132px;
+    margin-right: 36px;
+}
+.news .right li .dsc2 span{
+    height: 21px;
+    color: #222;
+    font-size: 16px;
+}
+.news .right li .dsc2 em{
+    display: block;
+    height: 15px;
+    border-bottom: 1px dashed rgba(71, 94, 222, .1);
+}
+.news .right li .dsc2 i{
+    display: block;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+em,
+i {
+    font-style: normal;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}

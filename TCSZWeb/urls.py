@@ -30,4 +30,11 @@ urlpatterns = [
     path('origin/', tcsz.origin),
     path('celebrity/', tcsz.celebrity),
     path('custom/', tcsz.custom),
+    path('activity/', tcsz.activity),
+    path('new/', tcsz.new),
+    path('notice/', tcsz.notice),
+    path('vacation/accommodation',tcsz.accommodation),
+    path('vacation/food',tcsz.food),
+    path('vacation/play',tcsz.play),
+    path('vacation/commodity',tcsz.commodity),
 ]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

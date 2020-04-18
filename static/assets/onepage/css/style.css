@@ -1535,3 +1535,6 @@ Styler Panel
   top: 2px;
   position: relative;
 }
+.bg-gray {
+	background: #F3F4F8;
+}

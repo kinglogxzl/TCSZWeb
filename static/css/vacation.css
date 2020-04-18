@@ -1,0 +1,155 @@
+.product-grid{ font-family: 'Source Sans Pro', sans-serif; }
+.product-grid .product-image{
+	position: relative;
+	overflow: hidden;
+}
+.product-grid .product-image a.image{ display: block; }
+.product-grid .product-image img{
+	width: 100%;
+	height: auto;
+}
+.product-image .pic-1{
+	backface-visibility: hidden;
+	transition: all .5s ease 0s;
+}
+.product-grid .product-image:hover .pic-1{
+	opacity: 0;
+	transform: translateX(-50%);
+}
+.product-image .pic-2{
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transition: all .5s ease 0s;
+}
+.product-grid .product-image:hover .pic-2{
+	opacity: 1;
+	left: 0;
+}
+.product-grid .product-sale-label{
+	color: #fff;
+	background: #b79b6c;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border-radius: 3px 10px 10px 3px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.product-grid .product-button-group{
+	font-size: 0;
+	width: 100%;
+	opacity: 0;
+	transform: perspective(600px) translateY(15px) rotateX(90deg);
+	transform-origin: bottom center;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	transition: all 0.3s ease 0.1s;
+}
+.product-grid:hover .product-button-group{
+	opacity: 1;
+	transform: translateY(0) rotateX(0);
+}
+.product-grid .product-button-group a{
+	color: #fff;
+	background: #333;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
+	width: calc(50% - 4px);
+	padding: 10px 5px;
+	margin: 0 2px;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+.product-grid .product-button-group a:hover{ background-color: #b79b6c; }
+.product-grid .product-content{
+	padding: 12px 0 0;
+	position: relative;
+}
+.product-grid .title{
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin: 0 0 5px;
+}
+.product-grid .title a{
+	color: #333;
+	transition: all 0.5s ease;
+}
+.product-grid .title a:hover{ color: #b79b6c; }
+.product-grid .price{
+	color: #b79b6c;
+	font-size: 18px;
+	font-weight: 600;
+}
+.product-grid .price span{
+	color: #999;
+	font-size: 17px;
+	font-weight: 500;
+	text-decoration: line-through;
+	margin-right: 2px;
+}
+.product-grid:hover .price{ opacity: 0; }
+.product-grid .add-to-cart{
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	opacity: 0;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	transition: all 0.3s linear 0s;
+}
+.product-grid .add-to-cart:hover{
+	color: #b79b6c;
+	text-decoration: underline;
+}
+.product-grid:hover .add-to-cart{
+	opacity: 1;
+	bottom: 2px;
+}
+
+.hotel-name {
+    font-family: FZDaHei-B02S;
+    font-size: 24px;
+    color: #4b4b4b;
+    line-height: 4;
+    font-weight: 900;
+}
+
+.hotel-introduction {
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.subpage a {
+    text-decoration: none;
+    color: #272831;
+    float: right;
+    margin-top: 5px;
+}
+
+.subpage a:hover {
+    color: #e6400c;
+}
+
+.img-content {
+    max-height: 80%;
+}
+
+.subpage {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

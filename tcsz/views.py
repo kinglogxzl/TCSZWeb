@@ -28,16 +28,152 @@ def test(request):
 def tradition(request):
     context = {}
     context['title'] = '水镇概述'
-    return render(request, 'tradition.html',context)
+    return render(request, 'watertown/tradition.html',context)
 def origin(request):
     context = {}
     context['title'] = '水镇渊源'
-    return render(request, 'origin.html',context)
+    return render(request, 'watertown/origin.html',context)
 def celebrity(request):
     context = {}
     context['title'] = '水镇名人'
-    return render(request, 'celebrity.html',context)
+    return render(request, 'watertown/celebrity.html',context)
 def custom(request):
     context = {}
     context['title'] = '水镇民俗'
-    return render(request, 'custom.html',context)
+    return render(request, 'watertown/custom.html',context)
+def activity(request):
+    context = {}
+    context['title'] = '景区活动'
+    return render(request, 'activity/activity.html',context)
+def new(request):
+    context = {}
+    context['title'] = '新闻动态'
+    return render(request, 'activity/new.html',context)
+def notice(request):
+    context = {}
+    context['title'] = '景区公告'
+    return render(request, 'activity/notice.html',context)
+
+def accommodation(request):
+    context = {}
+    context['title'] = '住宿'
+    context['cont'] = [
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        }
+    ]
+    return render(request, 'vacation/accommodation.html',context)
+
+def food(request):
+    context = {}
+    context['title'] = '美食'
+    context['cont'] = [
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        }
+    ]
+    return render(request, 'vacation/food.html',context)
+
+def commodity(request):
+    context = {}
+    context['title'] = '伴手礼'
+    context['cont'] = [
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        }
+    ]
+    return render(request, 'vacation/commodity.html',context)
+
+def play(request):
+    context = {}
+    context['title'] = '休闲娱乐'
+    context['cont'] = [
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        },
+        {
+            'src1': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp.jpg',
+            'src2': '/static/img/陶瓷水镇高端特色民宿图/帝师客居宅（四合院）/640.webp%20(1).jpg',
+            'name': '帝师客居宅',
+            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+        }
+    ]
+    return render(request, 'vacation/play.html',context)
