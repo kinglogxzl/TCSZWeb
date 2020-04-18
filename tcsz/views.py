@@ -53,3 +53,8 @@ def notice(request):
     context = {}
     context['title'] = '景区公告'
     return render(request, 'activity/notice.html',context)
+
+def accommodation(request):
+    context = {}
+    context['title'] = '住宿'
+    return render(request, 'vacation/accommodation.html',context)
