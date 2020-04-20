@@ -1,29 +1,121 @@
-.wrap-full{width:100%;}
-.wrap{width:1400px;margin-left:auto;margin-right:auto;}
-.page-h2{font-family: 'SourceHanS-S_Be206bf1321a330';font-size: 32px;color: #272831;letter-spacing: 0.57px;line-height: 56px;}
-.page-h2 span{color:#e30000}
-.page-p{font-family:Arial,'微软雅黑','Microsoft YaHei',PingFangSC-Regular;font-size: 18px;color: #7E808A;letter-spacing: 0.8px;line-height: 28px;}
-.page-h4{font-family:Arial,'微软雅黑','Microsoft YaHei',PingFangSC-Regular;font-size: 18px;color: #272831;letter-spacing: 0.8px;}
-.page-h2-1{font-family: 'SourceHanS-S_Be206bf1321a330';font-size: 36px;color: #272831;letter-spacing: 1.29px;line-height:51px;}
-.page-h2-1 span{color:#e30000}
-.page-h2-t{padding-top:32px;padding-bottom:32px;}
-.page-nav{border-bottom: 1px solid #D5DAE1;padding-top:30px;padding-bottom:30px;padding-bottom:34px;list-style:none;}
-.page-nav li{float:left;line-height:19px;margin-left:5px;margin-right:5px;font-family:Arial,'微软雅黑','Microsoft YaHei',PingFangSC-Regular;font-size: 14px;color: #7E808A;letter-spacing: 0;}
-.page-nav li a{color: #7E808A;}
-.page-nav li.active{font-family:Arial,'微软雅黑','Microsoft YaHei',PingFangSC-Regular;font-size: 14px;color: #000000;letter-spacing: 0;}
-*{margin:0;padding:0;}
+.wrap-full {
+    width: 100%;
+}
+
+.wrap {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-h2 {
+    font-family: 'SourceHanS-S_Be206bf1321a330';
+    font-size: 32px;
+    color: #272831;
+    letter-spacing: 0.57px;
+    line-height: 56px;
+}
+
+.page-h2 span {
+    color: #e30000
+}
+
+.page-p {
+    font-family: Arial, '微软雅黑', 'Microsoft YaHei', PingFangSC-Regular;
+    font-size: 18px;
+    color: #7E808A;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+}
+
+.page-h4 {
+    font-family: Arial, '微软雅黑', 'Microsoft YaHei', PingFangSC-Regular;
+    font-size: 18px;
+    color: #272831;
+    letter-spacing: 0.8px;
+}
+
+.page-h2-1 {
+    font-family: 'SourceHanS-S_Be206bf1321a330';
+    font-size: 36px;
+    color: #272831;
+    letter-spacing: 1.29px;
+    line-height: 51px;
+}
+
+.page-h2-1 span {
+    color: #e30000
+}
+
+.page-h2-t {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.page-nav {
+    border-bottom: 1px solid #D5DAE1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-bottom: 34px;
+    list-style: none;
+}
+
+.page-nav li {
+    float: left;
+    line-height: 19px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Arial, '微软雅黑', 'Microsoft YaHei', PingFangSC-Regular;
+    font-size: 14px;
+    color: #7E808A;
+    letter-spacing: 0;
+}
+
+.page-nav li a {
+    color: #7E808A;
+}
+
+.page-nav li.active {
+    font-family: Arial, '微软雅黑', 'Microsoft YaHei', PingFangSC-Regular;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .celebrity-name {
-	font-family: FZDaHei-B02S;
+    font-family: FZDaHei-B02S;
     font-size: 24px;
     color: #4b4b4b;
     font-weight: 900;
 }
+
 .celebrity-birth {
     margin-left: 20px;
 }
+
 .introduction-p {
     text-indent: 2em;
     letter-spacing: 3px;
     line-height: 40px;
+    font-size: 18px;
+}
+
+.page-title2 {
+    font-family: 'SourceHanS-S_Be206bf1321a330';
+    font-size: 20px;
+    color: #272831;
+    letter-spacing: 0.57px;
+    line-height: 30px;
+}
+
+.more-name {
+    letter-spacing: 3px;
+    margin-top: 2em;
+    font-size: 18px;
+    color: #000000;
 }

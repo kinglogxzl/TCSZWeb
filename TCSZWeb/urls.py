@@ -38,4 +38,5 @@ urlpatterns = [
     path('vacation/play',tcsz.play),
     path('vacation/commodity',tcsz.commodity),
     path('trip/service',tcsz.service),
+    path('vacation/food/detail/<str:name>',tcsz.food_detail)
 ]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
