@@ -177,3 +177,7 @@ def play(request):
         }
     ]
     return render(request, 'vacation/play.html',context)
+def service(request):
+    context = {}
+    context['title'] = '景区服务'
+    return render(request, 'trip/service.html',context)
