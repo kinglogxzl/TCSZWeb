@@ -12,10 +12,21 @@ def hello(request):         #request参数必须有，名字类似self的默认�
 def index(request):
     context = {}
     meili = [
-        {"name":'水上项目',"path":'/static/img/水上项目/s1.png','jj':'简介','xq':'详情'}
+        {"name":'五彩灯笼',"path":'/static/img/水上项目/7.jpg','jj':'','xq':'详情'},
+        {"name": '庭院一角', "path": '/static/img/水上项目/2.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '古镇门楼', "path": '/static/img/水上项目/11.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '水镇夜景', "path": '/static/img/水上项目/3.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '水镇夜景', "path": '/static/img/水上项目/10.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '水上项目', "path": '/static/img/水上项目/9.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '水边民宿', "path": '/static/img/水上项目/1.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '水上古船', "path": '/static/img/水上项目/8.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '石太铁路', "path": '/static/img/水上项目/6.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '景区远景', "path": '/static/img/水上项目/5.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '景区俯景', "path": '/static/img/水上项目/4.jpg', 'jj': '', 'xq': '详情'},
+        {"name": '河中小岛', "path": '/static/img/水上项目/12.jpg', 'jj': '', 'xq': '详情'}
     ]
     context['title'] = '陶瓷水镇旅游官方网站'
-    for i in range(11):
+    for i in range(0):
         meili.append(meili[0])
     context['meili'] = meili
     #context['hello'] = 'Hello World!'
