@@ -88,6 +88,10 @@ def strategy(request):
     context = {}
     context['title'] = '旅游攻略'
     return render(request, 'trip/strategy.html', context)
+def video(request):
+    context = {}
+    context['title'] = '宣传影音'
+    return render(request, 'video/video.html', context)
 
 
 
