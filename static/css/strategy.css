@@ -1,0 +1,98 @@
+@charset "utf-8";
+ul,ul li{list-style:none;padding: 0;margin: 0;}
+.wc-bg{position:relative;background: url(/static/img/trip/nei-huang-bg.jpg);}
+.brandBg {/* position:relative; *//* left: 0px; *//* width: 100%; *//* height: 551px; */}
+.brandBg img{width:100%;height: 100%;}
+.inner{margin:0 auto;position: relative;z-index: 9;width: 1050px;left: 50%;margin-left: -525px;}
+.wrap {width: 1200px;margin: 0 auto;}
+.con-bg-bai{background: rgba(255, 255, 255, 0.81);padding: 20px 50px 0px 50px;height: 100%;min-height: 900px;}
+
+/*gaikuang*/
+
+.noc-nav ul{list-style:none;float:right;margin: 0 180px 0 0;}
+.noc-nav ul li{float:left;padding: 0px 5px;cursor: pointer;}
+.noc-nav ul li a{width: 100%;height: 100%;line-height: 100%;display: inline-block;padding: 0px 5px;color:#847464;font-weight: 500;padding: 15px 10px;text-align: center;font-size: 16px;}
+.noc-nav .ul-list{overflow:hidden;background: url(/static/img/trip/listnav-line-bg02.png) no-repeat left bottom;}
+.noc-nav div.list-img{position:absolute;right: -10px;top: -50px;width: 139px;height: 158px;z-index: 99;}
+
+.title h3{font-size: 26px;color: #333;font-weight:500;margin: 0px;}
+.title:before{content:" ";display:inline-block;width:50px;border-top: 2px solid #FC6500;position: relative;top: 0px;}
+.content_wrapper{
+	width: 100%;
+	height: auto;
+	margin: 15px auto 0px auto;
+	/* overflow-x: hidden; */
+	/* overflow-y: auto; */
+	}
+
+.content_gdt::-webkit-scrollbar {
+	width: 4px;    
+	height: 4px;
+}
+.content_gdt::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: rgba(0, 0, 0, 0.15);
+}
+.content_gdt::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15);
+	border-radius: 0;
+	background: rgba(0, 0, 0, 0.02);
+}
+
+.postbody .one-img{float:left;padding:0 30px 0 0;}
+.postbody .one-text p{line-height:1.6;color:#656464;font-size: 14px;text-indent: 30px;}
+.postbody hr{ border: none;border-top: 1px dotted #d3d3d3;margin-top: 10px; margin-bottom: 10px;word-wrap: break-word; word-break: normal;}
+.gk-san-img {padding: 30px 0 20px 0;}
+.gk-san-img img{display:block;margin:0px auto;}
+.postbody .two-img{float:right;padding:0 0 0 30px;}
+.postbody .tit{width: 375px;}
+.tit.center{display:block;margin:0 auto;width: 100%;}
+.tit.center img{display:block;margin:0 auto;}
+.padding-20{padding:20px 0px;}
+
+/*gong yi ping*/
+.gyp-list{overflow:hidden;margin: 20px 0;}
+.gyp-list .gyp-item{width: 211px;height: 250px;float: left;margin-bottom: 3.5%;margin-right: 3.5%;}
+.gyp-list .gyp-item.add_padding{margin-right: 0;} 
+.gyp-list .gyp-item img{width: 100%;height: 200px;}
+.gyp-list .gyp-item .gy-tit{font-size:20px;color: #232323;text-align:center;padding: 10px 0px;}
+.gyp-list .gyp-item:hover .gy-tit{color:#a38f81;}
+
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+
+.table-all{margin:20px 0 0 0;}
+.table-all table{border-collapse:collapse;text-align:center;}
+.table-all .table-tit{text-align:center;padding: 10px 0px;color:#000;font-size: 18px;}
+.table-all tr,.table-all td{border:1px solid #ddd;padding:10px 0;color: #444;}
+
+/*tu wen zi xun*/
+.xw-gonglv .zx-list{width:294px;float:left;margin-right: 29px;position: relative;}
+.xw-gonglv .zx-list.last{margin:0px;}
+.xw-gonglv{position: relative;margin-top: 20px;/* padding-bottom: 60px; */z-index: 1;overflow:hidden;}
+.xw-gonglv .section-title{position: relative;margin-bottom: 40px;}
+.xw-gonglv .item-holder{position: relative;margin-bottom: 40px;transition: all 500ms ease;}
+.xw-gonglv .item-holder:hover{transition: all 500ms ease;box-shadow: 0 0 20px 5px #f1f1f1;}
+.xw-gonglv .item-holder .image-box{position: relative;}
+.xw-gonglv .item-holder .image-box  figure{max-width: 100%;overflow: hidden;}
+.xw-gonglv .item-holder img{position: relative;width: 100%;-webkit-transition: all .8s ease-in-out;transition: all .8s ease-in-out;}
+.xw-gonglv .item-holder .image-box .date-box{position: absolute;bottom: -20px;left: 20px;}
+.xw-gonglv .item-holder .date-box span{font-size: 16px;color: #8e5d3e;line-height: 18px;font-weight: 400;padding: 8px 20px;background: #d9d6c9;display: inline-block;font-family: 'Roboto Slab', serif;}
+.xw-gonglv .item-holder .content-text{position: relative;padding: 40px 20px 0px 20px;border: 1px solid #f0eeea;border-top: none;}
+.xw-gonglv .item-holder .content-text .text{min-height: 90px;}
+.xw-gonglv .content-text .sec-title h5{position: relative;font-size: 18px;line-height: 26px;font-weight: 600;color: #2f2f2f;/* padding-bottom: 10px; */margin-bottom: 0px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.xw-gonglv .content-text .sec-title:before{position: absolute;left: 0px;bottom: 10px;content: '';width: 50px;height: 2px;background: #ba754b;}
+.xw-gonglv .content-text .text p{font-size: 14px;line-height: 26px;color: #6c6763;font-weight: 400;/* padding-bottom: 15px; */display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+.xw-gonglv .item-holder .blog-info{border-top: 1px solid #f6f6f6;}
+.xw-gonglv .item-holder .blog-info li{display: inline-block;font-size: 14px;line-height: 28px;font-weight: 400;color: #6c6763;padding: 12px 0px;margin-right: 10px;text-transform: capitalize;font-family: 'Antic', sans-serif;}
+.xw-gonglv .item-holder .blog-info li i{font-size: 13px;margin-right: 8px;}
+.xw-gonglv .item-holder:hover .date-box span{background: #ba754b;color: #fff;}
+.xw-gonglv .item-holder:hover .image-box img{ width:100%; transform: rotate(3deg) scale(1.1);-ms-transform: rotate(3deg) scale(1.1); -webkit-transform: rotate(3deg) scale(1.1);   }
+.xw-gonglv .content-text .sec-title {min-height: 75px;position: relative;}
+.xw-gonglv .partner-heading {border-left: 5px solid #ececec;padding-left: 23px;/* margin-bottom: 51px; */position: relative;overflow: hidden;}
+.xw-gonglv .partner-heading::before {content: '';position: absolute;width: 100%;height: 1px; background: linear-gradient(to left, transparent, transparent, #ececec); top: 0;left: 0;}
+.xw-gonglv .partner-heading::after {content: ''; position: absolute; width: 100%;height: 1px;background: linear-gradient(to left, transparent, transparent, #ececec);bottom: 0;left: 0;}
+.xw-gonglv .partner-heading h2 {font-size: 24px;text-transform: uppercase;color: #545454;font-family: 'RalewayBold';margin-top: 20px;margin-bottom: 15px;padding-top: 7px;}
+.xw-gonglv .partner-heading p {margin-bottom: 24px;color: #888;}
+.xiao-jd-all.xw-gonglv .zx-list:hover .image-box img {transform:scale(1.1);-ms-transform:scale(1.1); -webkit-transform:scale(1.1);}

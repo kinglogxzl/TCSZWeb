@@ -84,6 +84,11 @@ def traffic(request):
     context = {}
     context['title'] = '景区服务'
     return render(request, 'trip/traffic.html', context)
+def strategy(request):
+    context = {}
+    context['title'] = '旅游攻略'
+    return render(request, 'trip/strategy.html', context)
+
 
 
 def accommodation(request):
