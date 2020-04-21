@@ -80,6 +80,10 @@ def notice(request):
     context = {}
     context['title'] = '景区公告'
     return render(request, 'activity/notice.html', context)
+def traffic(request):
+    context = {}
+    context['title'] = '景区服务'
+    return render(request, 'trip/traffic.html', context)
 
 
 def accommodation(request):
