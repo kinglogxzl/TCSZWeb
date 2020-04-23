@@ -3,112 +3,25 @@
 
 
 
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-			}
+<script src="//player.polyv.net/script/player.js"></script>
+<div id="test">
+<div id='player'></div>
+</div>
+<script>
+var width = document.getElementById("test").scrollWidth;
+var height = width*0.5625; // 16/9 = 0.5625;
+var player = polyvPlayer({
+wrap: '#player',
+autoplay:'true',
+'width':width,
+'height':height,
+'vid' : '59d3419028e893b30786f80e2d444492_5',
+	'loop' :true,
+	'skinLocation' : 2,
+	'volume':1
+});
+</script>
 
-			html,
-			body {
-				height: 100%;
-				width: 100%;
-				overflow: hidden;
-			}
-
-			#videoWrap {
-				height: 100%;
-				width: 100%;
-				background-color: #383838;
-			}
-
-			#myVideo {
-				display: block;
-			}
-
-
-
-		</style>
-
-
-	<body>
-		<section id="videoWrap">
-			<!--视频模块-->
-			<video src="/static/img/mp4/1.mp4" id="myVideo" id="myVideo" autoplay></video>
-		</section>
-	</body>
-
-	<script type="text/javascript">
-		window.onload = function() {
-			var myVideo = document.querySelector('#myVideo');
-			var footer = document.getElementById('footer');
-			var start = document.querySelector('#footer .btns .start');
-			var end = document.querySelector('#footer .btns .end');
-			var isSound = document.querySelector('#footer .others .volume .isSonud>span');
-			var time = document.querySelectorAll('#footer .others .time span');
-			var full = document.querySelector('#footer .full>span');
-			var timer = null;
-			var isFullScreen = false;
-
-			var progress = document.querySelectorAll('#footer .progress');
-			var smallGrey = document.querySelectorAll('#footer .progress .smallGrey');
-			var smallWhite = document.querySelectorAll('#footer .progress .smallGrey .smallWhite')
-			var smallPink = document.querySelectorAll('#footer .progress .smallPink');
-			var volume = 1;
-			myVideo.width = document.documentElement.clientWidth;
-			myVideo.height = document.documentElement.clientHeight - footer.offsetHeight;
-
-             //当游览器大小改变，视频自适应
-			window.onresize = function() {
-				myVideo.width = document.documentElement.clientWidth;
-				myVideo.height = document.documentElement.clientHeight - footer.offsetHeight;
-			}
-
-
-			//全屏逻辑
-			full.onclick = function() {
-				if(isFullScreen) {
-					removeClass(full, 'active')
-					isFullScreen = false
-					if(document.exitFullscreen) {
-						document.exitFullscreen();
-					} else if(document.mozCancelFullScreen) {
-						document.mozCancelFullScreen();
-					} else if(document.webkitCancelFullScreen) {
-						document.webkitCancelFullScreen();
-					} else if(document.msExitFullscreen) {
-						document.msExitFullscreen();
-					}
-				} else {
-					addClass(full, 'active')
-					isFullScreen = true
-					var docElm = document.documentElement;
-					//W3C
-					if(docElm.requestFullscreen) {
-						docElm.requestFullscreen();
-					}
-					//FireFox
-					else if(docElm.mozRequestFullScreen) {
-						docElm.mozRequestFullScreen();
-					}
-					//Chrome等
-					else if(docElm.webkitRequestFullScreen) {
-						docElm.webkitRequestFullScreen();
-					}
-					//IE11
-					else if(docElm.msRequestFullscreen) {
-						docElm.msRequestFullscreen();
-					}
-				}
-			}
-
-
-
-
-
-
-		}
-	</script>
 
 {% include "utils/prefooter.html" %}
 {% include "utils/footer.html" %}
