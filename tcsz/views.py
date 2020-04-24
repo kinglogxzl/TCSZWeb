@@ -297,6 +297,142 @@ def food_detail(request, name):
             more_data.append({'name': item, 'img': food_list[item][0]['img']})
     context['data'] = food_list[name]
     context['idname'] = '美食'
+    context['tname'] = 'food'
+    context['name'] = name
+    context['more_data'] = more_data
+    return render(request, 'vacation/detail.html', context)
+
+def accommodation_detail(request, name):
+    context = {}
+    context['title'] = name + '|陶瓷水镇'
+    context['title2'] = '更多房间'
+    accommodation_list = {
+        '马家大院': [
+            {"img": '/static/img/民宿/马家大院1.jpg',
+             "p": ['马家大院位于村子的正中央，是清代轶士马席珍的故居，历经一百多年的历史沧桑，仍旧矗立在这个古老的村庄。']
+             },
+            {"img": '/static/img/民宿/马家大院2.jpg',
+             "p": ['整个院落古典而错落有致，华丽而不奢靡，在瓦片和屋檐下，烛光闪闪，想必有很多值得探索的故事！院内有三间民宿，分别为素雅、淳朴、勤勉，每间客房面积均为20㎡左右，每间客房内都带有独立卫生间。山景之中的日出，河韵之中的秀石，美景与远方，时光与情怀，享受与自在。']
+             }],
+        '忠孝传家': [
+            {"img": '/static/img/民宿/忠孝传家1.jpg',
+             "p": ['忠孝传家远，诗书继世长。忠孝传家院落是中式装修风格，院内共有三间民宿，院内配有厨房，三五好友，住在这样的院落，好不惬意。']
+             },
+            {"img": '/static/img/民宿/忠孝传家2.jpg',
+             "p": ['院内面积30㎡左右，院内三间民宿分别为睿智、礼仪、仁慈义德，每间客房面积均在25㎡左右，配有公共卫生间。']
+             }
+        ],
+        '永春堂萱': [
+            {"img": '/static/img/民宿/永春堂萱1.jpg',
+             "p": ['永春堂萱（一宅三院）民宿院内20㎡左右，院内有三间民宿，分别为清闲、安逸、甜淡，每间客房面积均为15㎡左右，三间客房公用卫生间。民宿，让赶路者放缓了脚步，在慢时光下懂得慢享受；']
+             },
+            {"img": '/static/img/民宿/永春堂萱2.jpg',
+             "p": ['让旅行者为之倾倒，寻觅宁静中的那份洒脱；让寻梦者为之惊叹，如诗梦一样的经营生活。有形、有意、有境，民宿之美，美在年代感；民宿之美，美在有灵魂。']
+             }
+        ],
+        '观陶水榭': [
+            {"img": '/static/img/民宿/观陶水榭1.jpg',
+             "p": ['观陶水榭民宿院位于一宅三院民宿院旁，民宿院内分为上下两层，装修都为中式风格，院内面积30㎡左右，院内有三间民宿房，分别为悟禅、静夜思、听风赏月，悟禅房间面积稍小，15㎡左右，静夜思和听风赏月面积均为30㎡左右，每间客房内都带有独立卫生间。']
+             },
+            {"img": '/static/img/民宿/观陶水榭2.jpg',
+             "p": ['迷人的民宿，好似一家富有情怀的小酒馆，里面藏着各种美味的酒。休憩之日，与三五老友小聚一餐，醉人的佳酿入口，思绪慢慢的走，带你回到美好的年代']
+             }
+        ],
+        '荷塘月色': [
+            {"img": '/static/img/民宿/荷塘月色1.jpg',
+             "p": [
+                 '荷塘月色民宿院临近甘陶河，推开房门映入眼帘的是甘陶河的风景，山和游船相呼应，在夜晚更深切的体会到古村落的寂静。']
+             },
+            {"img": '/static/img/民宿/荷塘月色2.jpg',
+             "p": ['荷塘月色院内装修均为榻榻米风格，院内面积25㎡左右，院内有四间民宿房，分别为长思、采莲、静坐、益养天年，每间客房面积均为25㎡左右，每间客房内都带有独立卫生间。纯净的天空，梦幻的远方，繁华之外，安静之上，或栖于村寨，享受原始与淳朴']
+             }
+        ],
+        '陶岸憩斋': [
+            {"img": '/static/img/民宿/陶岸憩斋1.jpg',
+             "p": [
+                 '陶岸憩斋是离景区中心较远的一处民宿院落。因所有的墙体建筑以及地面都使用烧瓷时用的耐火砖，而耐火砖的砖体表面颜色呈金黄色，故名为“黄金屋”。']
+             },
+            {"img": '/static/img/民宿/陶岸憩斋2.jpg',
+             "p": ['院内面积40㎡左右，院内有四间民宿，分别为松、竹、美、兰，每间客房面积均为20㎡左右，每间客房内都带有独立卫生间。民宿或许是寻觅归属感的最佳地方，在这里可以让你摆脱都市压力的束缚，让疲惫的心灵得到宝贵的歇息机会，更重要的是可以找寻到久违的归属感，遇见最美的自己。']
+             }
+        ],
+        '迓祉迎祥': [
+            {"img": '/static/img/民宿/迓祉迎祥1.jpg',
+             "p": [
+                 '“迓，迎也。古本皆作讶。祉，福也，禄也。迎祥 ，迎纳吉祥。”']
+             },
+            {"img": '/static/img/民宿/迓祉迎祥2.jpg',
+             "p": [
+                 '迓祉迎祥院内面积20㎡左右，院内有三间民宿，分别为福瑞、祥和、厚德载物，每间客房面积均为17㎡左右，每间客房内都带有独立卫生间。行在胡同里，住在人情里。陶瓷水镇民宿，你来，春暖花开。']
+             }
+        ],
+        '双河别墅': [
+            {"img": '/static/img/民宿/双河别墅1.jpg',
+             "p": [
+                 '人生难得仙境处，陶瓷水镇在人间']
+             },
+            {"img": '/static/img/民宿/双河别墅2.jpg',
+             "p": [
+                 '沿街望去，青砖黛瓦，斗拱垂檐，宛若回到了梦里故乡。大红灯笼高高挂，“陶瓷水镇南横口”。真的是未见秀水，已然见波。']
+             }
+        ]
+    }
+    more_data = []
+    for item in accommodation_list:
+        if item != name:
+            more_data.append({'name': item, 'img': accommodation_list[item][0]['img']})
+    context['data'] = accommodation_list[name]
+    context['idname'] = '住宿'
+    context['tname'] = 'accommodation'
+    context['name'] = name
+    context['more_data'] = more_data
+    return render(request, 'vacation/detail.html', context)
+
+
+def play_detail(request, name):
+    context = {}
+    context['title'] = name + '|陶瓷水镇'
+    context['title2'] = '更多娱乐项目'
+    play_list = {
+        '呐喊喷泉': [
+            {"img": '/static/img/娱乐/hq.jpg',
+             "p": ['网红呐喊喷泉不仅能“闻”声起舞，还能伴随呐喊声持续上升，声音越持久喷泉越高。']
+             },
+            {"img": '/static/img/娱乐/hq1.jpg',
+             "p": ['如果你的肺活量爆棚的话，你将会看到这道水光与蓝天白云举案齐眉的壮观景象，惊叹它的神奇！在这样一个天然氧吧里放声呐喊，释放激情！释放压力!']
+             }],
+        '画舫': [
+            {"img": '/static/img/娱乐/hf.jpg',
+             "p": ['艳唱潮初落，江花露未晞。春洲惊翡翠，朱服弄芳菲。']
+             },
+            {"img": '/static/img/娱乐/hf1.jpg',
+             "p": ['画舫烟中浅，青阳日际微。锦帆冲浪湿，罗袖拂行衣。含情罢所采，相叹惜流晖。']
+             }
+        ],
+        '脚踏船': [
+            {"img": '/static/img/娱乐/jtc.jpg',
+             "p": ['集运动、娱乐、休闲等功能于一体，满足个人及家庭享受生活的需要。']
+             },
+            {"img": '/static/img/娱乐/jtc1.jpg',
+             "p": ['在发展中国家，脚踏船多作为公园、旅游景点的经营项目供人们消费，少量也作为个人的游玩手段。']
+             }
+        ],
+        '乌篷船': [
+            {"img": '/static/img/娱乐/wpc.jpg',
+             "p": ['碧波漫透的水，乌篷船飘于上面，不禁令人想到无数的描写江南水乡的诗句，想到那诗情画意的地方。']
+             },
+            {"img": '/static/img/娱乐/wpc1.jpg',
+             "p": ['碧绿的水面浮着一叶叶小船，飘飘摇摇，载的是一种闲适，一份雅情。']
+             }
+        ]
+    }
+    more_data = []
+    for item in play_list:
+        if item != name:
+            more_data.append({'name': item, 'img': play_list[item][0]['img']})
+    context['data'] = play_list[name]
+    context['idname'] = '休闲娱乐'
+    context['tname'] = 'play'
     context['name'] = name
     context['more_data'] = more_data
     return render(request, 'vacation/detail.html', context)
