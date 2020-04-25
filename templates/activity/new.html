@@ -11,21 +11,21 @@
         </ul>
         <div class="clear"></div>
     </div>
-
+{%for item in cont%}
     <div class="wrap cultural">
 
         <ul class="cl">
                       <li>
-                <a href="http://hebei.ifeng.com/a/20190826/7705879_0.shtml" class="cl">
-                    <img src="/static/img/activity/01.jpg"alt="" title="">
+                <a href="/activity/new/detail/{{item.name}}" class="cl">
+                    <img src="{{item.src1}}"alt="" title="">
                     <div>
-                        <h2 title="陶瓷水镇：借势旅发大会 千年陶瓷之乡再绽芳华">陶瓷水镇：借势旅发大会 千年陶瓷之乡再绽芳华</h2>
-                                                    <span>陶瓷水镇</span>
-                                                    <span>旅发大会</span>
-                                                    <span>井陉窑</span>
-                                                <h4>2019.12.01</h4>
+                        <h2 title="{{item.name}}">{{item.name}}</h2>
+                                                    <span>{{item.name1}}</span>
+                                                    <span>{{item.name2}}</span>
+                                                    <span>{{item.name3}}</span>
+                                                <h4> {{item.time}}</h4>
                         <p>
-                            井陉窑是历经隋、唐、宋、金、元、明、清等朝代的一处大型瓷窑址集群，距今已有千年历史。南横口村位于井陉县城南部,是历史古村，井陉现代陶瓷业的发源地，遗存县内规模最大、保存最为完整的古瓷密遗址。南横口古瓷窑是井陉窑的重要组成部分和典型代表。
+                             {{item.intro}}
                          </p>
                         <div class="views">
 							<span>
@@ -37,56 +37,20 @@
                 </a>
                 <div class="clear"></div>
             </li>
-                        <li>
-                <a href="https://baijiahao.baidu.com/s?id=1654216142297200766" class="cl">
-                    <img src="/static/img/activity/02.jpg"alt="" title="">
-                    <div>
-                        <h2 title="井陉古村落——陶瓷水镇新添红色文化主题展馆">井陉古村落——陶瓷水镇新添红色文化主题展馆</h2>
-                                                    <span>陶瓷水镇</span>
-                                                    <span>红色景区</span>
-                                                    <span>度假景区</span>
-                                                <h4>2019.08.31</h4>
-                        <p>
-                            景区精心打造的红色文化主题展馆举行了开展仪式，展馆展示的红色书籍、红色书画等千余件红色实物，吸引众多周围居民以及游客、学生等不同群体前来观展。
-                         </p>
-                        <div class="views">
-							<span>
-								了解更多
-								<span></span>
-							</span>
-                        </div>
-                    </div>
-                </a>
-                <div class="clear"></div>
-            </li>
-                        <li>
-                <a href="http://hebei.news.163.com/19/0826/15/ENH1KM6G04158FGJ.html" class="cl">
-                    <img src="/static/img/activity/03.jpg"alt="" title="">
-                    <div>
-                        <h2 title="陶瓷水镇新貌即将亮相石家庄第五届旅发大会！">陶瓷水镇新貌即将亮相石家庄第五届旅发大会！</h2>
-                                                    <span>陶瓷水镇</span>
-                                                    <span>旅发大会</span>
-                                                    <span>古村落</span>
-                                                <h4>2019.04.08</h4>
-                        <p>
-                            本次旅发大会以“太行风情 古陉新韵”为主题，以“活旅游、聚产业、促发展、惠民生”为宗旨，依托井陉千年古县、百年老矿文化底蕴和生态资源优势，实施旅游公共服务设施提升工程、景区设施提档和新项目建设工程，丰富当地旅游资源，打造传统古村落片区。
-                         </p>
-                        <div class="views">
-							<span>
-								了解更多
-								<span></span>
-							</span>
-                        </div>
-                    </div>
-                </a>
-                <div class="clear"></div>
-            </li>
-                                                                                                                                                                                                                                                        																														                                                                                                                                                                                                                                                                                                                                    																														                                                                                                </ul>
-        <div class="clear"></div>
+        </ul>
+
     </div>
 
-
-
-
+{% endfor %}
 {% include "utils/prefooter.html" %}
+<script>
+    $(function () {
+        $(".subpage").each(function (index, now) {
+            console.log(now);
+            if (index % 2)
+                $(this).addClass("bg-gray");
+        });
+    })
+
+</script>
 {% include "utils/footer.html" %}
