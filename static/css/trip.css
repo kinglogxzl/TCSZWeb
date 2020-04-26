@@ -1,7 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
-body{font-family:"Microsoft YaHei UI", "微软雅黑";}
-.sc1428 {width:1428px;margin:0 auto;}
-.scxxsgcontentbox {margin-top:-8px;background:url(/static/img/trip/xxsgbgn.jpg) no-repeat bottom;min-height:500px;padding:40px 0 120px 0;}
-.contentbox {width:100%;margin-top:40px;background:#fff; border-radius:8px;min-height:500px;padding:50px;}
+body {
+    font-family: "Microsoft YaHei UI", "微软雅黑";
+}
+
+.sc1428 {
+    width: 1428px;
+    margin: 0 auto;
+}
+
+.scxxsgcontentbox {
+    margin-top: -8px;
+    background: url(/static/img/trip/xxsgbgn.jpg) no-repeat bottom;
+    min-height: 500px;
+}
+
+.contentbox {
+    width: 100%;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 8px;
+    min-height: 500px;
+    padding: 50px;
+}
+
 /* CSS Document */
