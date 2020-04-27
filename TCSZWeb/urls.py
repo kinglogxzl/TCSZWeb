@@ -39,6 +39,7 @@ urlpatterns = [
     path('vacation/commodity',tcsz.commodity),
     path('trip/service',tcsz.service),
     path('vacation/food/detail/<str:name>',tcsz.food_detail),
+    path('vacation/commodity/detail/<str:name>',tcsz.commodity_detail),
     path('vacation/accommodation/detail/<str:name>', tcsz.accommodation_detail),
     path('vacation/play/detail/<str:name>', tcsz.play_detail),
     path('activity/new/detail/<str:name>', tcsz.new_detail),

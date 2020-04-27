@@ -269,22 +269,10 @@ def commodity(request):
             'intro': ' 茶叶是一种娇气的物品，稍保养不好就跑味，或者易潮，让原本原滋原味的茶叶变味，高档茶叶瞬间不值钱，陶瓷茶叶罐刚好弥补了这一缺陷，不但装茶叶能防潮，还让茶叶原味保持清香很久，茶叶一单装在茶叶罐里的时候，一下子提高茶叶的档次，让茶文化和陶瓷文化演绎的完美结合。'
         },
         {
-            'src1': '/static/img/伴手礼/3.jpg',
-            'src2': '/static/img/伴手礼/4.jpg',
-            'name': '帝师客居宅',
-            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
-        },
-        {
-            'src1': '/static/img/伴手礼/5.jpg',
-            'src2': '/static/img/伴手礼/6.jpg',
-            'name': '帝师客居宅',
-            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
-        },
-        {
-            'src1': '/static/img/伴手礼/7.jpg',
-            'src2': '/static/img/伴手礼/8.jpg',
-            'name': '帝师客居宅',
-            'intro': ' 陶瓷水镇紧邻甘陶河，风光秀美，人杰地灵，在甘陶河上有北方少见的画舫，乌篷船，和脚踏船，游完古村落，可以乘坐游船，吹吹河风，歇歇脚，遥看整个古村落的全貌。伴随悠扬的音乐，坐在画舫之中，仿佛穿越回千年前的梦里水乡。'
+            'src1': '/static/img/伴手礼/8.jpg',
+            'src2': '/static/img/伴手礼/7.jpg',
+            'name': '斗笠杯',
+            'intro': ' 山水画中，凭江垂钓的渔翁，头上总是少不得一顶斗笠。因为斗笠是田园生活的缩影，宁静，安详，流露着一股自由闲适，不由让人心安，充满向往。'
         }
     ]
     return render(request, 'vacation/commodity.html', context)
@@ -644,3 +632,35 @@ def notice_detail(request, name):
     context['name'] = name
     context['more_data'] = more_data
     return render(request, 'activity/detail.html', context)
+
+def commodity_detail(request, name):
+    context = {}
+    context['title'] = name + '|陶瓷水镇'
+    context['title2'] = '更多伴手礼'
+    commodity_list = {
+        '茶叶罐': [
+            {"img": '/static/img/伴手礼/2.jpg',
+             "p": ['茶叶是一种娇气的物品，稍保养不好就跑味，或者易潮，让原本原滋原味的茶叶变味，高档茶叶瞬间不值钱，陶瓷茶叶罐刚好弥补了这一缺陷，']
+             },
+            {"img": '/static/img/伴手礼/1.jpg',
+             "p": ['不但装茶叶能防潮，还让茶叶原味保持清香很久，茶叶一单装在茶叶罐里的时候，一下子提高茶叶的档次，让茶文化和陶瓷文化演绎的完美结合。']
+             }],
+        '斗笠杯': [
+             {"img": '/static/img/伴手礼/8.jpg',
+             "p": ['山水画中，凭江垂钓的渔翁，头上总是少不得一顶斗笠。因为斗笠是田园生活的缩影，宁静，安详，流露着一股自由闲适，不由让人心安，充满向往。']
+             },
+            {"img": '/static/img/伴手礼/7.jpg',
+            "p": ['千百年来，精巧的斗笠杯碗也沾了斗笠的光，被古人赋予了一种逸然世外，天高云淡的道韵。甚至很多文人雅客认为用三才盖碗泡茶、斗笠杯品茶，才能充分体会茶道的韵。如今尚存的茶道流派，都对斗笠杯用情颇深。']
+             }]
+
+    }
+    more_data = []
+    for item in commodity_list:
+        if item != name:
+            more_data.append({'name': item, 'img': commodity_list[item][0]['img']})
+    context['data'] = commodity_list[name]
+    context['idname'] = '休闲娱乐'
+    context['tname'] = 'commodity'
+    context['name'] = name
+    context['more_data'] = more_data
+    return render(request, 'vacation/detail.html', context)
