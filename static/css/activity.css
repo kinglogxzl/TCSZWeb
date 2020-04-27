@@ -1,7 +1,7 @@
 ﻿.wrap{width:1400px;margin-left:auto;margin-right:auto;}
 .ph1{font-family: 'SourceHanS-S_Be206bf1321a330';font-size: 36px;color: #272831;letter-spacing: 1.29px;}
 .cultural > h1{padding-top:32px;}
-.cultural > ul > li{display:block;border-bottom:1px solid #D5DAE1;padding-bottom:48px;padding-top:48px;}
+.cultural > ul > li{display:block;padding-bottom:48px;padding-top:48px;}
 .cultural > ul > li:last-child{border-bottom:0}
 .cultural > ul > li img{float:left;margin-right:40px;width:400px;height:250px;}
 .cultural > ul > li > a > div{float:left;width:959px;}
