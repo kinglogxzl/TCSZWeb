@@ -19,23 +19,24 @@
                     <div class="title"><h3>旅游攻略</h3></div>
                     <div class="content_wrapper">
                       <div class="postbody detail xw-gonglv">
+                          {%for item in cont%}
                         <div class="zx-list ">
-                            <a href="#"  title="漫游水镇" style="text-decoration: none; ">
+                            <a href="/trip/strategy/detail/{{item.name}}"  title="{{item.name}}" style="text-decoration: none; ">
                                 <div class="item-holder">
                                     <div class="image-box">
                                         <figure>
-                                                <img src="/static/img/trip/youji1.jpg" alt="">
+                                                <img src="{{item.src}}" alt="">
                                         </figure>
                                         <div class="date-box">
-                                            <span>2020-01-26</span>
+                                            <span>{{item.time}}</span>
                                         </div>
                                     </div>
                                     <div class="content-text">
                                         <div class="sec-title">
-                                           <h5>漫游水镇</h5>
+                                           <h5>{{item.name}}</h5>
                                         </div>
                                         <div class="text">
-                                            <p> 陶瓷水镇位于 井陉 南横口村，地处 河北 省省会 石家庄 市 井陉 县城南部，是一个有着一千多年历史的古村落。因为这一带曾经是当年 井陉 窑的主要窑址，村中因此有了无数废弃的匣钵，这些匣钵曾被当地村民广泛的用于村中的建筑上，这种别具风格的墙体成为了当地一道靓丽的风景，也记录着这里曾经繁盛一时的陶瓷制造业。 </p>
+                                            <p> {{item.intro}} </p>
                                         </div>
                                         <ul class="blog-info">
 
@@ -44,132 +45,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="zx-list ">
-                            <a href="#"  title="夏天这么热，我想去水镇" style="text-decoration: none; ">
-                                <div class="item-holder">
-                                    <div class="image-box">
-                                        <figure>
-                                                <img src="/static/img/trip/youji2.jpg" alt="">
-                                        </figure>
-                                        <div class="date-box">
-                                            <span>2020-04-24</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-text">
-                                        <div class="sec-title">
-                                           <h5>夏天这么热，我想去水镇</h5>
-                                        </div>
-                                        <div class="text">
-                                            <p> 井陉 县位于 河北 省西部边陲，冀晋结合部， 太行山 东麓，北邻 平山 县，东部和东南部与 鹿泉 、 元氏 、 赞皇 三县毗连，西部和西南部同 山西 省 盂县 、 平定 、 昔阳 三县接壤。 井陉 素有“太行八陉之第五陉，天下九塞之第六塞”之称乃冀通衢要冲，历代兵家必争之地，是冀晋陕三省物资交流集散地，年交易额高达10亿元，是华北西部军事、经济、文化重镇，驰名中外的韩信背水之战，著名的百团大战， 井陉 都是主战场。 </p>
-                                        </div>
-                                        <ul class="blog-info">
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="zx-list last ">
-                            <a href="#"  title="陶瓷水镇-千年古镇 陶瓷之乡" style="text-decoration: none; ">
-                                <div class="item-holder">
-                                    <div class="image-box">
-                                        <figure>
-                                                <img src="/static/img/trip/youji3.jpg" alt="">
-                                        </figure>
-                                        <div class="date-box">
-                                            <span>2020-04-24</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-text">
-                                        <div class="sec-title">
-                                           <h5>陶瓷水镇-千年古镇 陶瓷之乡</h5>
-                                        </div>
-                                        <div class="text">
-                                            <p> 街道两侧保存有清代民居宅院数座，其中最具代表性的是 清道 光至同治年间南横口士绅马席珍、马贡珍兄弟之宅院，俗称“马家大院”。南院建筑格局较具特色——大门朝北，砖砌门楼。门内为一长约20米、宽6米的长方形宽敞院落，院落东部是一长近20米、宽3米的长方形影壁，影壁上檐有简单砖饰。 </p>
-                                        </div>
-                                        <ul class="blog-info">
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="zx-list ">
-                            <a href="#"  title="南横口陶瓷水镇" style="text-decoration: none; ">
-                                <div class="item-holder">
-                                    <div class="image-box">
-                                        <figure>
-                                                <img src="/static/img/trip/youji4.jpg" alt="">
-                                        </figure>
-                                        <div class="date-box">
-                                            <span>2020-02-20</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-text">
-                                        <div class="sec-title">
-                                           <h5>南横口陶瓷水镇</h5>
-                                        </div>
-                                        <div class="text">
-                                            <p> 历史上的南横口村，曾是一个瓷器生产和销售十分兴旺的瓷乡。相传最鼎盛的时期，这里窑厂达到80座之多，村里至今仍然保留着井陉窑遗存规模最大、保存最为完整的古瓷窑遗址。 </p>
-                                        </div>
-                                        <ul class="blog-info">
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="zx-list ">
-                            <a href="#"  title="陶醉在匣钵墙的独特古韵中" style="text-decoration: none; ">
-                                <div class="item-holder">
-                                    <div class="image-box">
-                                        <figure>
-                                                <img src="/static/img/trip/youji5.jpg" alt="">
-                                        </figure>
-                                        <div class="date-box">
-                                            <span>2020-02-05</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-text">
-                                        <div class="sec-title">
-                                           <h5>陶醉在匣钵墙的独特古韵中</h5>
-                                        </div>
-                                        <div class="text">
-                                            <p>  徜徉在这样的古村中，尽管人迹寥寥，略感破败苍凉，但陶瓷文化的艺术气息与历史铸就的厚重感还是深深感染着人们，在无言中彰显着其应有的价值。 </p>
-                                        </div>
-                                        <ul class="blog-info">
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="zx-list last ">
-                            <a href="#"  title="石家庄有个匣钵镶嵌的千年古村" style="text-decoration: none; ">
-                                <div class="item-holder">
-                                    <div class="image-box">
-                                        <figure>
-                                                <img src="/static/img/trip/youji6.jpg" alt="">
-                                        </figure>
-                                        <div class="date-box">
-                                            <span>2020-01-05</span>
-                                        </div>
-                                    </div>
-                                    <div class="content-text">
-                                        <div class="sec-title">
-                                           <h5>石家庄有个匣钵镶嵌的千年古村...</h5>
-                                        </div>
-                                        <div class="text">
-                                            <p> 陶瓷水镇，顾名思义有两个特点：一个是陶瓷，一个是水。据了解，南横口古瓷窑最早的古窑遗迹见于金元时期，现存窑场遗迹均为清朝或民国时期所建。在此发现的“馒头窑”在河北是保存较为完好并且绝无仅有的，在全国也是少见。 </p>
-                                        </div>
-                                        <ul class="blog-info">
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
+                          {% endfor %}
 
                       </div>
                     </div>
@@ -190,5 +66,14 @@
 
 {% include "utils/prefooter.html" %}
 
+<script>
+    $(function () {
+        $(".subpage").each(function (index, now) {
+            console.log(now);
+            if (index % 2)
+                $(this).addClass("bg-gray");
+        });
+    })
 
+</script>
 {% include "utils/footer.html" %}

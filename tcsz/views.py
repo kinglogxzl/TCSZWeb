@@ -209,6 +209,45 @@ def traffic(request):
 def strategy(request):
     context = {}
     context['title'] = '旅游攻略'
+    context['cont'] = [
+        {
+        'name': '陶瓷水镇——带上好心情出发吧！！！',
+        'time': '2020-01-06',
+        'src': '/static/img/trip/youji1.jpg',
+        'intro': '古风古色，陶瓷砖瓦搭建的墙壁，也不知道多少是新修，多少是原本的面貌了，但是走在窄窄的巷子里，高高低低的陡峭，还是体会的到曾经古老的生活。'
+        },
+
+        {
+            'name': '石家庄周边游古村落篇—南横口陶瓷水镇',
+            'time': '2020-03-06',
+            'src': '/static/img/trip/youji2.jpg',
+            'intro': '从去年的旅发大会我就听说井陉有个陶瓷水镇，今天终于有机会来陶瓷水镇啦... ...'
+        },
+        {
+            'name': '井陉有个南横口，凭水临风。',
+            'time': '2020-04-06',
+            'src': '/static/img/trip/youji3.jpg',
+            'intro': '空气很好，水很干净，古香古色，疫情期间，人也并不是很多。看景，玩水，赏花，人文，都是不错的选择。'
+        },
+        {
+            'name': '井陉有个南横口，凭水临风。',
+            'time': '2020-04-06',
+            'src': '/static/img/trip/youji4.jpg',
+            'intro': '空气很好，水很干净，古香古色，疫情期间，人也并不是很多。看景，玩水，赏花，人文，都是不错的选择。'
+        },
+        {
+            'name': '井陉有个南横口，凭水临风。',
+            'time': '2020-04-06',
+            'src': '/static/img/trip/youji5.jpg',
+            'intro': '空气很好，水很干净，古香古色，疫情期间，人也并不是很多。看景，玩水，赏花，人文，都是不错的选择。'
+        },
+        {
+            'name': '井陉有个南横口，凭水临风。',
+            'time': '2020-04-06',
+            'src': '/static/img/trip/youji6.jpg',
+            'intro': '空气很好，水很干净，古香古色，疫情期间，人也并不是很多。看景，玩水，赏花，人文，都是不错的选择。'
+        }
+    ]
     return render(request, 'trip/strategy.html', context)
 def video(request):
     context = {}
@@ -770,3 +809,50 @@ def activity_detail(request, name):
     context['name'] = name
     context['more_data'] = more_data
     return render(request, 'activity/detail.html', context)
+
+def strategy_detail(request, name):
+    context = {}
+    context['title'] = name + '|陶瓷水镇'
+    context['title2'] = '更多攻略'
+    strategy_list = {
+        '陶瓷水镇——带上好心情出发吧！！！': [
+            {"img": '/static/img/trip/neirong1.jpg',
+             "p": ['古风古色，陶瓷砖瓦搭建的墙壁，也不知道多少是新修，多少是原本的面貌了，但是走在窄窄的巷子里，高高低低的陡峭，还是体会的到曾经古老的生活。']
+             },
+            {"img": '/static/img/trip/neirong2.jpg',
+             "p": ['疫情期间，人不算很多，有两三家可以吃饭，有小卖部可以买东西，走进民宿，可以看到每间得装修风格都截然不同，在院子里还能看到烧烤设备，想必这里的夜景也很美吧。陶瓷水镇，可以划船，可以放风筝，可以玩水，可以徒步，还可以体验制作陶瓷，满足全家人的需求了！！！']
+             }],
+        '石家庄周边游古村落篇—南横口陶瓷水镇': [
+            {"img": '/static/img/trip/neirong3.jpg',
+             "p": ['从去年的旅发大会我就听说井陉有个陶瓷水镇，今天终于有机会来陶瓷水镇啦... ... 陶瓷水镇位于井陉县南横口村，是具有特色历史遗留的古村落。一进入陶瓷小镇，各种厨房里常见的砂锅、瓷碗、水翁、菜坛，都被摆成各种造型，镶嵌在景区的景观墙上对于喜欢喜欢小瓷器的我，无疑是最大的吸引力。']
+             },
+            {"img": '/static/img/trip/neirong4.jpg',
+             "p": [
+                 '疫情期间，人不算很多，有两三家可以吃饭，有小卖部可以买东西，走进民宿，可以看到每间得装修风格都截然不同，在院子里还能看到烧烤设备，想必这里的夜景也很美吧。陶瓷水镇，可以划船，可以放风筝，可以玩水，可以徒步，还可以体验制作陶瓷，满足全家人的需求了！！！']
+             },
+            {"img": '/static/img/trip/neirong5.jpg',
+             "p": [
+                 '陶瓷水镇把笼盔、陶瓷植入古民居独有特点，赋予了南横口居民独有的笼盔文化。红石文化和窑砖文化特征，置身其间，仿佛游润于一座露天瓷艺建筑博物馆。笼盔垒墙，窑洞为家，清幽古道散发着千年古窑的气息！']
+             }],
+        '井陉有个南横口，凭水临风。': [
+            {"img": '/static/img/trip/neirong7.jpg',
+             "p": [
+                 '陶瓷水镇千年古村，不仅是有着千年历史的传统古村落，还是陶瓷之乡。其实有水的地方都会很美，水总赋予大自然更多的灵性。近处，水面随风荡漾，偶尔有白鹅和野鸭游过；远处，山色清浅，火车不时隆隆而过。']
+             },
+            {"img": '/static/img/trip/neirong8.jpg',
+             "p": [
+                 '空气很好，水很干净，古香古色，疫情期间，人也并不是很多。看景，玩水，赏花，人文，都是不错的选择。']
+             }],
+
+    }
+    more_data = []
+    for item in strategy_list:
+        if item != name:
+            more_data.append({'name': item, 'img': strategy_list[item][0]['img']})
+    context['data'] = strategy_list[name]
+    context['idname'] = '旅游攻略'
+    context['tname'] = 'strategy'
+    context['name'] = name
+    context['more_data'] = more_data
+    return render(request, 'trip/detail.html', context)
+

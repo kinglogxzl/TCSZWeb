@@ -68,8 +68,7 @@ a,img{border:0;}
 .table-all tr,.table-all td{border:1px solid #ddd;padding:10px 0;color: #444;}
 
 /*tu wen zi xun*/
-.xw-gonglv .zx-list{width:294px;float:left;margin-right: 29px;position: relative;}
-.xw-gonglv .zx-list.last{margin:0px;}
+.xw-gonglv .zx-list{width:294px;float:left;margin-right: 29px;position: relative;margin:0px 0px 0px 20px;}
 .xw-gonglv{position: relative;margin-top: 20px;/* padding-bottom: 60px; */z-index: 1;overflow:hidden;}
 .xw-gonglv .section-title{position: relative;margin-bottom: 40px;}
 .xw-gonglv .item-holder{position: relative;margin-bottom: 40px;transition: all 500ms ease;}

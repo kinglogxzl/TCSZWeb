@@ -1,0 +1,62 @@
+{% include "utils/booter.html" %}
+<link rel="stylesheet" type="text/css" href="/static/css/css.css">
+<link rel="stylesheet" type="text/css" href="/static/css/media.css">
+{% include "utils/nav.html" %}
+<br/><br/>
+<div class="row">
+    <div class="col-md-8 col-md-offset-1">
+        <ul class="page-nav cl">
+            <li><a href="/">首页</a></li>
+            <li>></li>
+            <li>传统水镇</a></li>
+            <li>></li>
+            <li class="active">{{idname}}</li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-1">
+        <h2 class="page-h2">{{name}}</h2>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 50px">
+    <div class="col-md-6 col-md-offset-1">
+        <div class="introduction">
+
+            {%for item in data%}
+            <div class="" style="padding-top:20px;padding-bottom:30px">
+                <img src="{{item.img}}" style="width: 100%">
+            </div>
+            {%for pp in item.p%}
+            <p class="introduction-p" style="margin: 20px 0px">
+                {{pp}}
+            </p>
+            {%endfor%}
+            {%endfor%}
+        </div>
+    </div>
+    <div class="col-md-3" style="margin-left: 3%">
+        <div class="introduction">
+            <h2 class="page-title2">{{title2}}</h2>
+            {%for item in more_data%}
+            <div class="row" style="margin-top: 30px">
+                <a href="/trip/{{tname}}/detail/{{item.name}}">
+                    <div class="col-md-6">
+                        <img src="{{item.img}}" style="width: 100%">
+                    </div>
+                    <div class="col-md-6" style="padding-left: 0px; text-align: left">
+                        <p class="more-name">
+                            {{item.name}}
+                        </p>
+                    </div>
+                </a>
+            </div>
+            {%endfor%}
+
+        </div>
+    </div>
+</div>
+
+
+{% include "utils/prefooter.html" %}
+{% include "utils/footer.html" %}
