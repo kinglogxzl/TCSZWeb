@@ -9,7 +9,8 @@
         <div class="news">
             <div class="title clearfix">
                 {%for item in cont%}
-                <div class="right mr11" onclick="window.location.href='/activity/notice/detail/{{item.name}}';">
+                <a href="/activity/notice/detail/{{item.name}}">
+                <div class="right mr11">
                     <div class="box bt1">
                         <ul>
                             <li class="clearfix">
@@ -26,6 +27,7 @@
                         </ul>
                     </div>
             </div>
+                </a>
                 {% endfor %}
         </div>
     </div>
