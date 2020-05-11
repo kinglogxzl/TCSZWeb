@@ -16,12 +16,12 @@ body {
 }
 
 .contentbox {
-    width: 100%;
-    margin-top: 40px;
+    width: 1200px;
     background: #fff;
     border-radius: 8px;
     min-height: 500px;
-    padding: 50px;
+    padding: 70px;
+    margin: auto;
 }
 
 /* CSS Document */
