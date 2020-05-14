@@ -83,8 +83,8 @@ def activity(request):
             'name1': '陶瓷水镇',
             'name2': '井陉社火',
             'name3': '非物质文化遗产',
-            'time': '2019.10.16',
-            'intro': '  10月16日上午旅发观摩团分两批来到井陉县陶瓷水镇南横口进行观摩。观摩团队按预定路线从东广场开始观摩。 '
+            'time': '2020.5.4',
+            'intro': '  5月4日上午陶瓷水镇迎来了国家非物质文化遗产"社火"的演出。 '
         },
         {
             'src1': 'http://image.taocishuizhen.com/activity/03.jpg',
@@ -149,7 +149,7 @@ def new(request):
             'intro': '本次旅发大会以“太行风情古陉新韵”为主题，以“活旅游、聚产业、促发展、惠民生”为宗旨，依托井陉千年古县、百年老矿文化底蕴和生态资源优势，实施旅游公共服务设施提升工程、景区设施提档和新项目建设工程，丰富当地旅游资源，打造传统古村落片区。'
         },
         {
-            'src1': 'http://image.taocishuizhen.comg/activity/1.jpg',
+            'src1': 'http://image.taocishuizhen.com/activity/1.jpg',
             'name': '井陉陶瓷水镇民俗文化节启动',
             'name1': '陶瓷水镇',
             'name2': '民俗文化节',
