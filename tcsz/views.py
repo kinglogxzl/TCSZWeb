@@ -45,6 +45,10 @@ def tradition(request):
     context['title'] = '水镇概述'
     return render(request, 'watertown/tradition.html', context)
 
+def mobile(request):
+    context = {}
+    return render(request, 'mobile/index.html', context)
+
 
 def origin(request):
     context = {}

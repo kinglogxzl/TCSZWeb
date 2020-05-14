@@ -48,5 +48,6 @@ urlpatterns = [
     path('trip/strategy/detail/<str:name>', tcsz.strategy_detail),
     path('trip/traffic',tcsz.traffic),
     path('trip/strategy',tcsz.strategy),
-    path('video/video',tcsz.video)
+    path('video/video',tcsz.video),
+    path('mobile/', tcsz.mobile)
 ]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

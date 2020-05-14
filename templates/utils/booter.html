@@ -34,3 +34,16 @@
     <link href="/static/assets/onepage/css/themes/red.css" rel="stylesheet" id="style-color">
     <link href="/static/assets/onepage/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/menu.css">
+<script type="text/javascript">
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+var browser = navigator.userAgent.toLowerCase();
+var isMobile = false;
+for (var i=0; i<mobileAgent.length; i++){
+    if (browser.indexOf(mobileAgent[i])!=-1){
+        isMobile = true;
+        //alert(mobileAgent[i]);
+        location.href = 'http://www.taocishuizhen.com/mobile/';
+        break;
+    }
+}
+</script>
