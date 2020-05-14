@@ -20,23 +20,23 @@ body{
 }
 /*-- banner-top --*/
 .w3layouts-banner-top{
-    background: url(/static/mobile/images/1.jpg) no-repeat 0px 0px;
+    background: url(http://image.taocishuizhen.com/mobile/1.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .w3layouts-banner-top1{
-	background: url(/static/mobile/images/2.jpg) no-repeat 0px 0px;
+	background: url(http://image.taocishuizhen.com/mobile/2.jpg) no-repeat 0px 0px;
     background-size: cover;	
 }
 .w3layouts-banner-top2{
-	background: url(/static/mobile/images/3.jpg) no-repeat 0px 0px;
+	background: url(http://image.taocishuizhen.com/mobile/3.jpg) no-repeat 0px 0px;
     background-size: cover;	
 }
 .w3layouts-banner-top3{
-	background: url(/static/mobile/images/4.jpg) no-repeat 0px 0px;
+	background: url(http://image.taocishuizhen.com/mobile/4.jpg) no-repeat 0px 0px;
     background-size: cover;	
 }
 .w3layouts-banner-top4{
-	background: url(/static/mobile/images/5.jpg) no-repeat 0px 0px;
+	background: url(http://image.taocishuizhen.com/mobile/5.jpg) no-repeat 0px 0px;
     background-size: cover;	
 }
 /*-- //banner-top --*/
@@ -370,7 +370,7 @@ ul.dropdown-menu li{
     text-decoration: none;
     width: 62px;
     height: 62px;
-    background: transparent url(../images/arrows1.png) no-repeat left top;
+    background: transparent url(http://image.taocishuizhen.com/mobile/arrows1.png) no-repeat left top;
 }
 .callbacks_nav.next {
 	left: auto;
@@ -753,12 +753,12 @@ i.fa.fa-quote-right{
     padding-right: 0;
 }
 .agile-news-img{
-    background: url(/static/mobile/images/n1.jpg) no-repeat -64px 0px;
+    background: url(http://image.taocishuizhen.com/mobile/n1.jpg) no-repeat -64px 0px;
     background-size: cover;
     min-height: 300px;
 }
 .agile-news-img1{
-    background: url(/static/mobile/images/n2.jpg) no-repeat -230px 0px !important;
+    background: url(http://image.taocishuizhen.com/mobile/n2.jpg) no-repeat -230px 0px !important;
     background-size: cover;
 }
 .agile-news-img-info{
@@ -1269,7 +1269,7 @@ i.fa.fa-quote-right{
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/arrow.png) no-repeat 0px 0px;
+	background: url(http://image.taocishuizhen.com/mobile/arrow.png) no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 40px;
