@@ -49,6 +49,11 @@ def mobile(request):
     context = {}
     return render(request, 'mobile/index.html', context)
 
+def scenic_overview(request):
+    context = {}
+    return render(request, 'mobile/scenic_overview.html', context)
+
+
 
 def origin(request):
     context = {}
