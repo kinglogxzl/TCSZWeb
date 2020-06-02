@@ -52,6 +52,19 @@ def mobile(request):
 def scenic_overview(request):
     context = {}
     return render(request, 'mobile/scenic_overview.html', context)
+def court_travel(request):
+    context = {}
+    return render(request, 'mobile/court_travel.html', context)
+def comfortable(request):
+    context = {}
+    return render(request, 'mobile/comfortable.html', context)
+def news(request):
+    context = {}
+    return render(request, 'mobile/news.html', context)
+
+def contact(request):
+    context = {}
+    return render(request, 'mobile/contact.html', context)
 
 
 
