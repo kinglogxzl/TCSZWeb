@@ -66,7 +66,19 @@ def contact(request):
     context = {}
     return render(request, 'mobile/contact.html', context)
 
+def HS(request):
+    context = {}
+    context['title'] = '红色纪念馆'
+    return render(request, 'mobile/news_show/HS.html', context)
 
+def TC(request):
+    context = {}
+    context['title'] = '陶瓷体验馆'
+    return render(request, 'mobile/news_show/TC.html', context)
+def SH(request):
+    context = {}
+    context['title'] = '水上项目'
+    return render(request, 'mobile/news_show/SH.html', context)
 
 def origin(request):
     context = {}
