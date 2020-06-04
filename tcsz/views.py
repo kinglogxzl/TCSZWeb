@@ -79,6 +79,16 @@ def SH(request):
     context = {}
     context['title'] = '水上项目'
     return render(request, 'mobile/news_show/SH.html', context)
+def SZ(request):
+    context = {}
+    context['title'] = '水镇人家主题餐厅'
+    return render(request, 'mobile/news_show/SHRJ.html', context)
+
+def TSJ(request):
+    context = {}
+    context['title'] = '陶世界'
+    return render(request, 'mobile/news_show/TSJ.html', context)
+
 
 def origin(request):
     context = {}

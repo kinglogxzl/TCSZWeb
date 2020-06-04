@@ -88,7 +88,7 @@ a:hover {
 body {
   font-family: "微软雅黑";
   min-width: 320px;
-  background: url(../images/bg.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/bg.png);
   overflow-x: hidden;
 }
 ul {
@@ -188,7 +188,7 @@ ul li {
   float: left;
   max-width: 115px;
   width: 14.285714285714285%;
-  background: url(../images/nav_r.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/nav_r.png) no-repeat right;
   text-align: center;
   line-height: 30px;
   position: relative;
@@ -283,7 +283,7 @@ ul li {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: url(../images/y_e1.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/y_e1.png);
   color: #cccccc;
   line-height: 22px;
   text-align: center;
@@ -291,7 +291,7 @@ ul li {
 }
 .header .container .logo_right .search .y_z a:hover,
 .header_zi .container .logo_right .search .y_z a:hover {
-  background: url(../images/y_e2.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/y_e2.png);
   color: #4f8320;
 }
 .header .container .logo_right .search .y_z .en,
@@ -300,7 +300,7 @@ ul li {
 }
 .header .container .logo_right .search .y_z .active,
 .header_zi .container .logo_right .search .y_z .active {
-  background: url(../images/y_e2.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/y_e2.png);
   color: #4f8320;
 }
 @media (max-width: 1000px) {
@@ -316,7 +316,7 @@ ul li {
 .banner .slick-dots {
   max-width: 1240px;
   width: 50%;
-  background: url(../images/ul_dian.png) no-repeat right center;
+  background: url(http://image.taocishuizhen.com/mobile/images/ul_dian.png) no-repeat right center;
   text-align: right;
   right: 15%;
   bottom: 10px;
@@ -325,7 +325,7 @@ ul li {
   margin: 0 14px;
 }
 .banner .slick-dots li button {
-  background: url(../images/b_dot.png) no-repeat center center;
+  background: url(http://image.taocishuizhen.com/mobile/images/b_dot.png) no-repeat center center;
   width: 20px;
   height: 20px;
 }
@@ -337,7 +337,7 @@ ul li {
   margin-right: 32px;
 }
 .banner .slick-dots .slick-active button {
-  background: url(../images/b_dot_h.png) no-repeat center center;
+  background: url(http://image.taocishuizhen.com/mobile/images/b_dot_h.png) no-repeat center center;
 }
 @media (max-width: 640px) {
   .banner .slick-dots {
@@ -349,7 +349,7 @@ ul li {
 /*index 景区概括*/
 .jqgk {
   width: 100%;
-  background: url(../images/top_bg.png) no-repeat;
+  background: url(http://image.taocishuizhen.com/mobile/images/top_bg.png) no-repeat;
   overflow: hidden;
 }
 .jqgk .contai {
@@ -360,7 +360,7 @@ ul li {
   color: #666666;
   font-size: 14px;
   line-height: 24px;
-  background: url(../images/xie_xian.png) repeat-x bottom;
+  background: url(http://image.taocishuizhen.com/mobile/images/xie_xian.png) repeat-x bottom;
   padding-bottom: 10px;
 }
 .jqgk .contai p {
@@ -386,7 +386,7 @@ ul li {
 }
 .top_tit .span1 a {
   color: #81a849;
-  background: url(../images/quan.png) no-repeat left 3px;
+  background: url(http://image.taocishuizhen.com/mobile/images/quan.png) no-repeat left 3px;
   padding: 0px 10px;
 }
 .top_tit .span1 img {
@@ -541,13 +541,13 @@ ul li {
   text-align: center;
 }
 .syzz .syzz_con .right .pr_ne .pr {
-  background: url(../images/s_1.png) no-repeat left;
+  background: url(http://image.taocishuizhen.com/mobile/images/s_1.png) no-repeat left;
   padding-left: 10px;
   float: left;
 }
 .syzz .syzz_con .right .pr_ne .ne {
   padding-right: 10px;
-  background: url(../images/x_1.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/x_1.png) no-repeat right;
   float: right;
 }
 .syzz .syzz_con .slick-prev {
@@ -625,7 +625,7 @@ ul li {
   position: relative;
 }
 .xia_x .img {
-  background: url(../images/xia.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/xia.png);
   width: 19px;
   height: 24px;
   position: absolute;
@@ -690,7 +690,7 @@ ul li {
   font-family: arial;
   text-align: left;
   padding-left: 8%;
-  background: url(../images/li_1.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/li_1.png) no-repeat right;
   min-height: 95px;
 }
 .home_news .news_con ul li .news_right span {
@@ -712,7 +712,7 @@ ul li {
 }
 .home_news .news_con ul li:hover .news_right {
   border-left: 1px solid #9ab96d;
-  background: url(../images/li_1_h.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/li_1_h.png) no-repeat right;
   color: #c6d7b3;
 }
 .home_news .news_con ul li:hover .news_right span {
@@ -749,7 +749,7 @@ ul li {
   width: 57px;
   height: 57px;
   display: block;
-  background: url(../images/more.png) no-repeat;
+  background: url(http://image.taocishuizhen.com/mobile/images/more.png) no-repeat;
   color: #4f8320;
   font-size: 12px;
   line-height: 57px;
@@ -762,7 +762,7 @@ ul li {
   font-weight: bold;
 }
 .footer {
-  background: url(../images/fonter_bg.png) no-repeat;
+  background: url(http://image.taocishuizhen.com/mobile/images/fonter_bg.png) no-repeat;
   overflow: hidden;
   padding-bottom: 40px;
 }
@@ -788,7 +788,7 @@ ul li {
 .footer .footer_con .con .nei .di_nav li {
   float: left;
   width: 16%;
-  background: url(../images/nav_r.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/nav_r.png) no-repeat right;
   text-align: center;
   line-height: 30px;
   font-size: 14px;
@@ -803,7 +803,7 @@ ul li {
   width: 75px;
   float: left;
   line-height: 30px;
-  background: url(../images/links_r.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/links_r.png) no-repeat right;
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -1104,17 +1104,17 @@ ul li {
 }
 .comfor_con .zx_fang .f_xiao .slick-prev {
   left: 0px;
-  background: url(../images/pr1_com.png) no-repeat;
+  background: url(http://image.taocishuizhen.com/mobile/images/pr1_com.png) no-repeat;
 }
 .comfor_con .zx_fang .f_xiao .slick-prev:hover {
-  background: url(../images/pr2_com.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/pr2_com.png);
 }
 .comfor_con .zx_fang .f_xiao .slick-next {
   right: 0px;
-  background: url(../images/ne1_com.png) no-repeat;
+  background: url(http://image.taocishuizhen.com/mobile/images/ne1_com.png) no-repeat;
 }
 .comfor_con .zx_fang .f_xiao .slick-next:hover {
-  background: url(../images/ne2_com.png) no-repeat;
+  background: url(http://image.taocishuizhen.com/mobile/images/ne2_com.png) no-repeat;
 }
 @media (max-width: 768px) {
   .comfor_con .zx_fang .f_xiao .slick-list {
@@ -1145,7 +1145,7 @@ ul li {
 .top_qie {
   height: 70px;
   margin-top: 10px;
-  background: url(../images/xie_xian.png) repeat-x bottom;
+  background: url(http://image.taocishuizhen.com/mobile/images/xie_xian.png) repeat-x bottom;
   width: 100%;
   text-align: center;
 }
@@ -1158,7 +1158,7 @@ ul li {
   background: ;
 }
 .top_qie a:hover {
-  background: url(../images/a_active.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/a_active.png);
 }
 @media (max-width: 480px) {
   .top_qie a {
@@ -1166,7 +1166,7 @@ ul li {
   }
 }
 .top_qie a.active {
-  background: url(../images/a_active.png);
+  background: url(http://image.taocishuizhen.com/mobile/images/a_active.png);
 }
 .news_zi_ul {
   width: 100%;
@@ -1235,7 +1235,7 @@ ul li {
   font-family: arial;
   text-align: left;
   padding-left: 8%;
-  background: url(../images/li_1.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/li_1.png) no-repeat right;
   min-height: 95px;
 }
 .news_zi_ul li .news_right span {
@@ -1339,7 +1339,7 @@ ul li {
   box-shadow: 0px 2px 0px #e6e6e6;
   -moz-box-shadow: 0px 2px 0px #e6e6e6;
   -webkit-box-shadow: 0px 2px 0px #e6e6e6;
-  background: url(../images/show_s1.png) no-repeat 20px center;
+  background: url(http://image.taocishuizhen.com/mobile/images/show_s1.png) no-repeat 20px center;
   overflow: hidden;
   margin-bottom: 2px;
 }
@@ -1347,7 +1347,7 @@ ul li {
   border: 1px solid #81a849;
   box-shadow: 0px 2px 1px #a2bf78;
   color: #81a849;
-  background: url(../images/show_x2.png) no-repeat 20px center;
+  background: url(http://image.taocishuizhen.com/mobile/images/show_x2.png) no-repeat 20px center;
 }
 .news_show .s_x .s_prev {
   margin-right: 4%;
@@ -1370,7 +1370,7 @@ ul li {
 }
 .contact_con .nei {
   font-size: 16px;
-  background: url(../images/contact_bg.png) no-repeat right;
+  background: url(http://image.taocishuizhen.com/mobile/images/contact_bg.png) no-repeat right;
   padding-bottom: 80px;
 }
 .contact_con .nei .left {
@@ -1696,7 +1696,7 @@ ul li {
   font-size: 14px;
   padding: 4px 20px;
   margin-bottom: 10px;
-  background: url(../images/dian.png) no-repeat center right;
+  background: url(http://image.taocishuizhen.com/mobile/images/dian.png) no-repeat center right;
 }
 .travel_con .tra_ul .top_a a:last-child {
   background: none;

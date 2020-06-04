@@ -58,6 +58,8 @@ urlpatterns = [
     path('mobile/news_show/HS', tcsz.HS),
     path('mobile/news_show/TC', tcsz.TC),
     path('mobile/news_show/SH', tcsz.SH),
+    path('mobile/news_show/SZ', tcsz.SZ),
+    path('mobile/news_show/TSJ', tcsz.TSJ),
     url(r'^robots\.txt$', lambda r: HttpResponse('User-agent: *\nDisallow: /admin', content_type='text/plain')),
 
 ]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
