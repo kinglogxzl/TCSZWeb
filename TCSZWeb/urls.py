@@ -46,6 +46,7 @@ urlpatterns = [
     path('activity/notice/detail/<str:name>', tcsz.notice_detail),
     path('trip/strategy/detail/<str:name>', tcsz.strategy_detail),
     path('trip/strategy/detail/<str:name>', tcsz.strategy_detail),
+    path('activity/activity/detail/<str:name>', tcsz.activity_detail),
     path('trip/traffic',tcsz.traffic),
     path('trip/strategy',tcsz.strategy),
     path('video/video',tcsz.video),
